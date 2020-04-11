@@ -15,7 +15,7 @@ end
 
 def assign_rooms(names)
   #room_assignments = []
-  names.collect {|name,index| room_assignments << room_maker(name,index+1)}
+  names.collect {|name,index| room_maker(name,index+1)}
   #room_assignments
 end
 
