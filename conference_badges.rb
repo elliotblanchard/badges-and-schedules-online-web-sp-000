@@ -10,7 +10,7 @@ def batch_badge_creator(names)
 end
 
 def room_maker(name,room)
-  "Hello, _____! You'll be assigned to room _____!"
+  "Hello, #{name}! You'll be assigned to room #{room}!"
 end
 
 def assign_rooms(names)
