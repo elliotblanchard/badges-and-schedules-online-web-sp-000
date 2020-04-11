@@ -15,6 +15,6 @@ end
 
 def assign_rooms(names)
   room_assignments = []
-  names.each {|name| room_assignments << badge_maker(name)}
+  names.each_with_index {|name,index| room_assignments << room_maker(name,index+1)}
   room_assignments
 end
