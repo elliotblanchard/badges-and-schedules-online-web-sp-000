@@ -14,7 +14,12 @@ def room_maker(name,room)
 end
 
 def assign_rooms(names)
-  room_assignments = []
-  names.each_with_index {|name,index| room_assignments << room_maker(name,index+1)}
-  room_assignments
+  #room_assignments = []
+  names.collect {|name,index| room_assignments << room_maker(name,index+1)}
+  #room_assignments
+end
+
+def printer(names)
+  batch_badge_creator(names).each {|name| puts(name)}
+  assign_rooms(names).each {|name| puts(name)}
 end
